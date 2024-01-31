@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link rel="stylesheet" href="/styles/style.css">
-    <title>desktop_index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"./>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>ONLINE_CLOTHING_STORE</title>
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">
-                <img src="/images/header_logo.svg" alt="Логотип" class="image__logo"><a href="#"></a></img>
-                <label class="header__label" for="search"><input type="text" name="search" class="header__search"><img src="/images/header_search_icon.svg" alt="" class="search__icon"></img></label>
-            </div> 
+                <a href="#">
+                    <img src="./images/header_logo.svg" alt="Логотип" class="image__logo"></img>
+                </a>
+                <label class="header__label" for="search">
+                    <input type="text" id="search" class="header__search">
+                    <img src="./images/header_search_icon.svg" alt="" class="search__icon"></img></label>
+            </div>
             
             <div class="header__button">
                 <button class="burger">
@@ -21,47 +25,55 @@
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                 </button> 
-                <a href="#"> <img src="/images/header_the_clients_widget.svg" alt="Виджет клиента" class="image__button"></img></a>
-                <a href="#"> <img src="/images/header_the_shopping_cart_widget.svg" alt="Виджет корзины товаров" class="image__button"></img></a>
+                <a href="#"> <img src="./images/header_the_clients_widget.svg" alt="Виджет клиента" class="image__button"></img></a>
+                <a href="#"> <img src="./images/header_the_shopping_cart_widget.svg" alt="Виджет корзины товаров" class="image__button"></img></a>
             </div>
         </div>
     </header>
 
     <main class="main">
         <section class="products-preview__section">
-            <div class="container products-preview__container">
-                <img src="/images/main_57_removebg_preview_1.svg" alt="Превью товара" class="preview__image"><a href="#"></a></img>
-                <div class="title__container">
-                    <div class="title-text__container">
-                        <h2 class="title-text__title">THE BRAND</h2>
-                        <h2 class="text__title">OF LUXERIOUS FASHION</h2>
+
+            <div class="container "> 
+                 <div class="products-preview__container">
+                <div class="products-preview__left">
+                <img src="./images/preview_image_copy_2.png" alt="Превью товара" class="preview__image"></img>
+            </div>
+            <div class="products-preview__right">
+                <div class="title-text__container">
+                    <h2 class="title-text__title">THE BRAND</h2>
+                    <div class="title-text__subtitle">
+                        <span class="text__title">OF LUXERIOUS</span>
+                         <span class="text__title text__title--color">FASHION</span>
                     </div>
                 </div>
             </div>
+            </div>
+        </div>
         </section>
 
-        <section class="offer__section">
+         <section class="offer__section">
             <div class="container offer__container">
                 <ul class="offer__cards">
-                    <li class="offer__card">
+                    <li class="offer__card offer__card-image1">
                         <a href="#" class="offer__link">
                             <span class="offer__subtitle">30% OFF</span>
                             <span class="offer__title">FOR WOMEN</span>
                         </a>
                     </li>
-                    <li class="offer__card">
+                    <li class="offer__card offer__card-image2">
                         <a href="#" class="offer__link">
                             <span class="offer__subtitle">HOT DEAL</span>
                             <span class="offer__title">FOR MEN</span>
                         </a>
                     </li>
-                    <li class="offer__card">
+                    <li class="offer__card offer__card-image3">
                         <a href="#" class="offer__link">
                             <span class="offer__subtitle">NEW ARRIVALS</span>
                             <span class="offer__title">FOR KIDS</span>
                         </a>
                     </li>
-                    <li class="offer__card">
+                    <li class="offer__card offer__card-image4">
                         <a href="#" class="offer__link">
                             <span class="offer__subtitle">LUXIROUS & TRENDY</span>
                             <span class="offer__title">ACCESORIES</span>
@@ -71,7 +83,7 @@
             </div>            
         </section>
 
-        <section class="product__section">
+       <section class="product__section">
             <div class="container product-items__container">
                 <div class="products-items__title">
                     <h2 class="title__title">Fetured Items</h2>
@@ -79,12 +91,13 @@
                 </div>
                 <div class="container product-item__container">
                     <div class="product__item">
-                        <a href="#" class="product__link">
-                            <img class="product__image" src="/images/elleryXcapsule_1.svg" alt="">
-                        </a>
-                        <button class="product__button">
-                            <img src="/images/header_the_shopping_cart_widget.svg" alt="корзина" class="add-to-card">
-                        </button>
+                        <div class="product__top">
+                            <img class="product__image" src="./images/elleryXcapsule_1.svg" alt="">                       
+                            <button class="product__button">
+                                <img src="./images/add_to_card_logo.png" alt="корзина" class="add-to-card">
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
                         <div class="product__title">
                             <h2 class="product-title__title">ELLERY X M'O CAPSULE</h2>
                         </div>
@@ -97,12 +110,13 @@
                         </div>                    
                     </div>
                     <div class="product__item">
-                        <a href="#" class="product__link">
-                            <img class="product__image" src="/images/elleryXcapsule_2.svg" alt="">
-                        </a>
-                        <button class="product__button">
-                            <img src="/images/header_the_shopping_cart_widget.svg" alt="корзина" class="add-to-card">
-                        </button>
+                        <div class="product__top">
+                            <img class="product__image" src="./images/elleryXcapsule_2.svg" alt="">                       
+                            <button class="product__button">
+                                <img src="./images/add_to_card.svg" alt="корзина" class="add-to-card">
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
                         <div class="product__title">
                             <h2 class="product-title__title">ELLERY X M'O CAPSULE</h2>
                         </div>
@@ -115,12 +129,13 @@
                         </div>                    
                     </div>
                     <div class="product__item">
-                        <a href="#" class="product__link">
-                            <img class="product__image" src="/images/elleryXcapsule_3.svg" alt="">
-                        </a>
-                        <button class="product__button">
-                            <img src="/images/header_the_shopping_cart_widget.svg" alt="корзина" class="add-to-card">
-                        </button>
+                        <div class="product__top">
+                            <img class="product__image" src="./images/elleryXcapsule_3.svg" alt="">                       
+                            <button class="product__button">
+                                <img src="./images/add_to_card.svg" alt="корзина" class="add-to-card">
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
                         <div class="product__title">
                             <h2 class="product-title__title">ELLERY X M'O CAPSULE</h2>
                         </div>
@@ -133,12 +148,13 @@
                         </div>                    
                     </div>
                     <div class="product__item">
-                        <a href="#" class="product__link">
-                            <img class="product__image" src="/images/elleryXcapsule_4.svg" alt="">
-                        </a>
-                        <button class="product__button">
-                            <img src="/images/header_the_shopping_cart_widget.svg" alt="корзина" class="add-to-card">
-                        </button>
+                        <div class="product__top">
+                            <img class="product__image" src="./images/elleryXcapsule_4.svg" alt="">                       
+                            <button class="product__button">
+                                <img src="./images/add_to_card.svg" alt="корзина" class="add-to-card">
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
                         <div class="product__title">
                             <h2 class="product-title__title">ELLERY X M'O CAPSULE</h2>
                         </div>
@@ -151,12 +167,13 @@
                         </div>                    
                     </div>
                     <div class="product__item">
-                        <a href="#" class="product__link">
-                            <img class="product__image" src="/images/elleryXcapsule_5.svg" alt="">
-                        </a>
-                        <button class="product__button">
-                            <img src="/images/header_the_shopping_cart_widget.svg" alt="корзина" class="add-to-card">
-                        </button>
+                        <div class="product__top">
+                            <img class="product__image" src="./images/elleryXcapsule_5.svg" alt="">                       
+                            <button class="product__button">
+                                <img src="./images/add_to_card.svg" alt="корзина" class="add-to-card">
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
                         <div class="product__title">
                             <h2 class="product-title__title">ELLERY X M'O CAPSULE</h2>
                         </div>
@@ -169,12 +186,13 @@
                         </div>                    
                     </div>
                     <div class="product__item">
-                        <a href="#" class="product__link">
-                            <img class="product__image" src="/images/elleryXcapsule_6.svg" alt="">
-                        </a>
-                        <button class="product__button">
-                            <img src="/images/header_the_shopping_cart_widget.svg" alt="корзина" class="add-to-card">
-                        </button>
+                        <div class="product__top">
+                            <img class="product__image" src="./images/elleryXcapsule_6.svg" alt="">                       
+                            <button class="product__button">
+                                <img src="./images/add_to_card.svg" alt="корзина" class="add-to-card">
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
                         <div class="product__title">
                             <h2 class="product-title__title">ELLERY X M'O CAPSULE</h2>
                         </div>
