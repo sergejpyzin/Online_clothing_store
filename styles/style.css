@@ -215,7 +215,7 @@ img {
 
 .offer__cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(160px 1fr));
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
   gap: 30px;
 }
 
@@ -484,7 +484,7 @@ img {
 
   .offer__card:nth-child(4n){
     height: 110px;
-    width: 730px;
+
   }
 
 }
@@ -506,10 +506,24 @@ img {
     display: none;
   }
 
+  .offer__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .offer__card:nth-child(4n) {
+    grid-column: 1 / 2;
+    height: 160px;
+  }
+
+  .product-item__container{
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 380px) {
   .container {
     max-width: 290px;   
     padding: 0 5px; 
   }
+
+
 }
