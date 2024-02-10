@@ -214,7 +214,7 @@ img {
 
 .header__label {
   position: relative;
-  width: 100px;
+  width: 200px;
 }
 
 .header__search {
@@ -222,6 +222,15 @@ img {
   outline: none;
   width: 100%;
   border: none;
+  padding: 5px 10px;
+  padding-left: 30px;
+  font-size: 14px;
+  outline: none;
+  color: whitesmoke;
+}
+
+.header__search:focus {
+  border-bottom: 1px solid whitesmoke;
 }
 
 .search__icon {
